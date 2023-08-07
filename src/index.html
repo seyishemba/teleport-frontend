@@ -6,8 +6,35 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link href="https://unpkg.com/tailwindcss@1.4.6/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    dialog[open] {
+    animation: appear .15s cubic-bezier(0, 1.8, 1, 1.8);
+    }
+    
+    dialog::backdrop {
+      background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(54, 54, 54, 0.5));
+      backdrop-filter: blur(3px);
+    }
+    
+    
+    @keyframes appear {
+    from {
+      opacity: 0;
+      transform: translateX(-3rem);
+    }
+    
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    } 
+    </style>
 </head>
-<body>
+<body class="" style="background: #edf2f7;">
+ 
+
   <app-root></app-root>
 </body>
 </html>

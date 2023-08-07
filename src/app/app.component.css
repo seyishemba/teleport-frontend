@@ -1,0 +1,9 @@
+input{
+    border: 1px solid black;
+    margin: 10px 0px
+}
+#debugger button{
+    background: #ccc;
+    padding: 5px 20px;
+    margin: 10px 1px
+}
